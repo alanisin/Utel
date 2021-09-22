@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.c1, .c2, .c3, .c4, .c5 {
+    width: 100%;
+    min-width: 150px;
+    height: 150px;
+    color: white;
+    
+}
+
+.c1{
+    background-color: black;
+}
+.c2{
+    background-color: darkblue;
+}
+.c3{
+    background-color: wheat;
+}
+.c4{
+    background-color:hotpink;
+}
+.c5{
+    background-color:red;
+}
+
+/* ---------------------------------------------------------------------Comienza es CSS a los 600 px*/
+@media (min-width: 600px){
+    .c2, .c3, .c4{
+        width: 50px;
+    }
+}
