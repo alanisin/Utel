@@ -53,7 +53,8 @@ footer{
 }
 .section_1_text{
     order: 2;
-background-color: teal;
+    color: white;
+background-color:black;
 width: 100%;
 height: 320px;
 display: flex;
@@ -107,9 +108,11 @@ align-items: center;
 justify-content: center;
 }
 .section_2{
+    order: 3;
     background-color: darkblue;
 }
 .section_3{
+    order: 4;
     background-color: wheat;
 }
 
