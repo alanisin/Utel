@@ -6,6 +6,7 @@
     text-decoration: none;
     border: none;
     outline: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 body{
 height: auto;
@@ -53,7 +54,7 @@ footer{
 }
 .section_1_text{
     order: 2;
-background-color: teal;
+background-color: black;
 width: 50%;
 height: 320px;
 display: flex;
@@ -66,7 +67,7 @@ justify-content: center;
 margin-top: 10px;
 font-size:4rem;
 height: 20%;
-
+font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .section_1_text p{
 
@@ -94,6 +95,10 @@ height: 20%;
     border-radius: 5px;
     padding: 0 15px
     }
+    .section_1_text button :hover{
+        box-shadow: 0 1px 6px 0 #ffffff;
+    border-color: #ffffff;
+        }
 .section_1_image{
     order: 1;
    background-image: url(./img/7reasoons\ sqare.png);
