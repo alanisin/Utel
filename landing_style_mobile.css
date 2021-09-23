@@ -23,7 +23,6 @@ html {
 .container{
     display: flex;
     flex-wrap: wrap;
-    margin-top: 60px;
 }
 
 .header, footer, .section_1, .section_2, .section_3 {
@@ -39,7 +38,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    position: fixed;
+    
 }
 footer{
     background-color:red;
