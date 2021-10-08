@@ -10,9 +10,9 @@ body, html {
   body .main-section { 
     height:100vh;
     width: 100%;
-    overflow-x: auto; 
+    overflow-x: hidden; 
     overflow-y: auto;
-    perspective: 2px;
+    perspective: 1px;
 
   }
   section .section-image {
@@ -26,10 +26,10 @@ body, html {
         text-align: center;
         color: black;
   }
-  /* posicionamos a nuestra imagen dentro de la sección */
+  
    img {
      position: absolute;
-    transform: translateZ(-2px) scale(1);
+    transform: translateZ(-3px) scale(2);
     z-index: -1;
    }
   section .section-title
