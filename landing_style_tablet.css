@@ -4,6 +4,7 @@
 .section_1_text{
     order: 1;
 width: 50%;
+margin-top: 10px;
 }
 .section_1_image{
     order: 2;
