@@ -341,16 +341,24 @@ footer h1{
 color: rgb(240, 240, 240);    
 font-weight: 700;
 font-size: 1.4rem;
+margin-bottom: 10px;
 }
 footer a{
 color: #dddddd;    
 font-weight: 700;
 font-size: 1.25rem;
+width: 20px;
+height: 20px;
 }
-footer a{
-    width: 20px;
-    height: 20px;
+.lista{
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}   
+.lista li{
+    margin-bottom: 5px;
 }
+
 
 .redes{
     width: 100%;
@@ -358,11 +366,12 @@ footer a{
     display: flex;
     justify-content: start;
     align-items: center;
-  
 }
+
 .twitter-logo{
     background-image: url(./img/1485972269-twitersocialnetworkbrandlogo_78989.svg);
     background-position: center;
+    background-repeat: no-repeat;
     background-size: contain;
     width: 25px;
     height: 20px;
@@ -372,14 +381,16 @@ footer a{
 .facebook-logo{
     background-image: url(./img/1485972229-facebooksocialnetworkbrandlogo_78984.svg);
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    width: 12px;
+    width: 11px;
     height: 20px;
     margin-right: 10px;
     margin-left: 10px;
 }
 .youtube-logo{
     background-image: url(./img/1485972299-youtubesocialnetworkbrandlogo_79028.svg);
+    background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     width: 25px;
@@ -390,6 +401,7 @@ footer a{
 .github-logo{
     background-image: url(./img/GITHUB_icon-icons.com_65553.svg);
     background-position: center;
+    background-repeat: no-repeat;
     background-size: contain;
     width: 25px;
     height: 20px;
