@@ -6,20 +6,26 @@
     border: none;
     outline: none;
 }
+
 /*---------------------------------------------------------------estilos body*/
 body {
-    margin: 0;
-    padding: 0;
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 550;
+    width: 100vw;
 
 }
-#main-header{
+
+#main-header {
     position: fixed;
 }
-main{
-    padding-top: 65px;
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
 }
 
 main .boton-generico {
@@ -34,10 +40,12 @@ main .boton-generico {
     border-radius: 5px;
     padding: 0 15px;
 }
- a {
+
+a {
     padding: 15px;
     color: white;
 }
+
 /*---------------------------------------------------------------Estilos header*/
 header {
     background-color: #031518;
@@ -48,7 +56,6 @@ header {
     height: 60px;
     margin-top: 0;
     box-shadow: 0px 2px 10px 0px #031518;
-    ;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -93,12 +100,13 @@ header div .nav-div-ul-left {
     display: flex;
     justify-content: left;
     font-weight: 999;
-    align-items:center ;
+    align-items: center;
 }
 
 header div .nav-div-ul-rigth {
     display: flex;
     justify-content: right;
+    align-items: center;
 }
 
 header li {
@@ -114,36 +122,54 @@ header a {
 
 header nav .menu-icon {
     background-image: url(https://scontent.fmex26-1.fna.fbcdn.net/v/t1.6435-9/90715229_1034174016976016_8775758521019924480_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=174925&_nc_eui2=AeEY99TzedbeZuYrEAyqwSVJl9zWKWKi9zmX3NYpYqL3OWbtJs8AJIzZL4K_-WezUACtgfaGcy4QtYio54pfH9MH&_nc_ohc=7di0YgXdnb4AX99fgLR&_nc_ht=scontent.fmex26-1.fna&oh=c52da6a249e2a2c9a1cb440f550020a6&oe=616D4B5F);
-    background-color: aqua;
     background-repeat: no-repeat;
     background-position: center;
-    background-size:contain;
+    background-size: cover;
     height: 50px;
     width: 50px;
     border-radius: 25px;
-    
+
 }
+
 /*---------------------------------------------------------------Estilos seccion banner*/
+
 main .seccion-banner {
+    margin-left: auto;
+    margin-right: auto;
     background-color: #1BBFDA;
-    background-image: url();
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: cover;
     display: flex;
-    justify-content:flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    width: auto;
-    height: 400px;
+    width: 100%;
+    height: auto;
+}
+
+main .seccion-banner .articulo1 {
+
+    width: 100%;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 
 }
 
-main .seccion-banner article {
-    width: 50%;
-    height: 100%;
+main .seccion-banner .articulo2 {
+
+    background-image: url(https://cdn0.iconfinder.com/data/icons/occupation-002-1/64/programmer-programming-occupation-avatar-512.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    margin-top: 200px;
 }
+
 main .seccion-banner article div {
 
     display: flex;
@@ -158,7 +184,7 @@ main .seccion-banner article div .boton-generico:hover {
 }
 
 main .seccion-banner article div .contenedor {
-    width: 400px;
+    width: 100%;
     height: 50px;
     border-radius: 10px;
     border: 1px solid #BFBFBF;
@@ -173,17 +199,18 @@ main .seccion-banner article div .contenedor:hover {
 }
 
 main .seccion-banner article img {
-    
+    width: 100%;
     margin-left: 200px;
     height: 200px;
-    
+
 }
 
 main .seccion-banner article .parte1 h1 {
     margin-left: 10px;
     margin-bottom: 10px;
-    font-size: 50px;
+    font-size: 2.5rem;
     font-weight: 700;
+    text-align: center;
 }
 
 main .seccion-banner article .parte2 p {
@@ -194,8 +221,13 @@ main .seccion-banner article .parte2 p {
 }
 
 main .seccion-banner article .parte3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-left: 10px;
     margin-bottom: 10px;
+    width: 90%;
 }
 
 main .seccion-banner article .parte4 p {
@@ -206,41 +238,45 @@ main .seccion-banner article .parte4 p {
 }
 
 /*---------------------------------------------------------------Estilos seccion titles*/
-main .seccion-title{
+main .seccion-title {
     background-color: black;
     color: white;
     margin: 10px;
+    width: 100%;
+    height: auto;
 }
 
 /*---------------------------------------------------------------Estilos seccion containers*/
 main .seccion-containers {
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: cover;
     display: flex;
-    justify-content:center;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    width: auto;
-    height: 300px;
-    
+    width: 100%;
+    height: auto;
+
 }
+
 main .seccion-containers article {
-    
     margin: 25px;
     width: 250px;
     height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 
 }
 
 main .seccion-containers .articulo1 {
-    
+
     margin: 25px;
     width: 250px;
     height: 250px;
     align-items: center;
 
 }
+
 main .seccion-containers article div {
 
     display: flex;
@@ -248,7 +284,8 @@ main .seccion-containers article div {
     align-items: center;
 
 }
-main .seccion-containers article .parte1{
+
+main .seccion-containers article .parte1 {
 
     background-color: black;
     color: white;
@@ -257,7 +294,8 @@ main .seccion-containers article .parte1{
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
-main .seccion-containers article .parte2{
+
+main .seccion-containers article .parte2 {
     background-color: #1BBFDA;
     width: 100%;
     height: 70%;
@@ -265,12 +303,35 @@ main .seccion-containers article .parte2{
     border-bottom-right-radius: 15px;
     text-align: center;
 }
-#caja1-1{background-color: rgb(15, 143, 4);}
-#caja1-2{ background-color:rgb(15, 143, 4);}
-#caja1-3{ background-color: rgb(15, 143, 4);}
-#caja1-4{ background-color: rgb(15, 143, 4);}
-#caja2-1{ background-color: rgb(15, 143, 4);}
-#caja2-2{ background-color: tomato;}
-#caja2-3{ background-color: tomato;}
-#caja2-4{ background-color: tomato;}
 
+#caja1-1 {
+    background-color: rgb(15, 143, 4);
+}
+
+#caja1-2 {
+    background-color: rgb(15, 143, 4);
+}
+
+#caja1-3 {
+    background-color: rgb(15, 143, 4);
+}
+
+#caja1-4 {
+    background-color: rgb(15, 143, 4);
+}
+
+#caja2-1 {
+    background-color: rgb(15, 143, 4);
+}
+
+#caja2-2 {
+    background-color: tomato;
+}
+
+#caja2-3 {
+    background-color: tomato;
+}
+
+#caja2-4 {
+    background-color: tomato;
+}
