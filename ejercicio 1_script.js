@@ -4,10 +4,10 @@ function impar() {
     //Ingresamos un mensaje a mostrar
     var numero = prompt("¿Ingresa un numero?", "")
     if (numero % 2!= 0) {
-        alert("el numero " + numero + " es un numero primo");
+        alert("el numero " + numero + " es un numero IMPAR");
     }
     else {
-        alert("el numero " + numero + " no es primo");
+        alert("el numero " + numero + " no es IMPAR");
     }
 }
 //---------------------------------------Ejercicio 2
