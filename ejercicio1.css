@@ -1,7 +1,20 @@
-section{background-color: thistle;
+section{
     display: flex;
     flex-direction: column;
-    width: 100px;
+    justify-content: center;
+    width: auto;
     height: auto;
+
+}
+input{
+    margin-bottom: 10px;
+    width: 250px;
+    height: 150px;
+    font-size: 1rem;
+    text-align: center;
+    background-color: yellowgreen;
+    color: white;
+    font-weight: 700;
+    border-radius: 10px 10px 10px 10px;
 
 }

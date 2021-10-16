@@ -1,8 +1,8 @@
 
 //---------------------------------------Ejercicio 1
 function impar() {
-    //Ingresamos un mensaje a mostrar
-    var numero = prompt("¿Ingresa un numero?", "")
+    //PAR O IMPAR
+    var numero = prompt("Validar impar: ¿Ingresa un numero?", "")
     if (numero % 2!= 0) {
         alert("el numero " + numero + " es un numero IMPAR");
     }
@@ -12,8 +12,8 @@ function impar() {
 }
 //---------------------------------------Ejercicio 2
 function ejercicio1() {
-    //Ingresamos un mensaje a mostrar
-    var nombre = prompt("Ingresa tu nombre")
+    //iNGRESAR NOMBRE
+    var nombre = prompt("Nombre completo:Ingresa tu nombre")
     if (nombre!=null) {
         var apellido = prompt("Ingresa tu apellido");
         alert("tu nombre es "+ nombre +" " +apellido);
@@ -23,8 +23,8 @@ function ejercicio1() {
     }
 }
 function ejercicio2() {
-    //Ingresamos un mensaje a mostrar
-    var nombre_completo = prompt("Ingresa tu nombre")
+    //VALIDAR PERMISOS
+    var nombre_completo = prompt("Validar permisos: Ingresa tu nombre")
     if (nombre_completo!=null) {
         var edad = prompt("Ingresa tu edad")
         if(edad>=18)
@@ -40,4 +40,52 @@ function ejercicio2() {
     else {
         alert("vacio");
     }
+}
+
+
+
+function ejercicio3() {
+    //CALIFICACIONES 
+    var calificacion=1;
+    var cal=0;
+    var suma=0;
+    var nombre_completo = prompt("Calificaciones: Ingresa tu nombre");
+  while(calificacion<=5)
+  {
+    var cal =prompt("Ingresa la calificacion "+ calificacion +"-"+suma);
+    suma+=Number(cal);
+    calificacion++;
+  }
+  var final=Number(suma)/5;
+  if(final>85){
+
+    alert(nombre_completo+" Pasaste tu calificacion es " + final);
+  }
+else{
+    alert(nombre_completo+" Reprobaste tu calificacion es " + final);
+
+}  
+
+}
+
+
+function ejercicio4() {
+    //nUMEROS PARES
+    var numero = prompt("Numeros par: Ingresa un numero de pares")
+    var a=1;
+    var x=0;
+    if (numero!=null) {
+    
+        while(a<numero)
+        {
+            var x=x+2
+            alert("solicitaste " +numero +" el par numero "+ a +" es " +x );
+            a++;
+        }
+        
+}
+else{
+    alert("bye");
+
+}
 }
