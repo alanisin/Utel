@@ -1,5 +1,5 @@
 
-//---------------------------------------Ejercicio 1
+//------------------------------------------------------------------------------Ejercicio 1
 function impar() {
     //PAR O IMPAR
     var numero = prompt("Validar impar: ¿Ingresa un numero?", "")
@@ -10,7 +10,7 @@ function impar() {
         alert("el numero " + numero + " no es IMPAR");
     }
 }
-//---------------------------------------Ejercicio 2
+//------------------------------------------------------------------------------Ejercicio 2
 function ejercicio1() {
     //iNGRESAR NOMBRE
     var nombre = prompt("Nombre completo:Ingresa tu nombre")
@@ -22,6 +22,8 @@ function ejercicio1() {
         alert("vacio");
     }
 }
+
+//------------------------------------------------------------------------------Ejercicio 3
 function ejercicio2() {
     //VALIDAR PERMISOS
     var nombre_completo = prompt("Validar permisos: Ingresa tu nombre")
@@ -43,7 +45,7 @@ function ejercicio2() {
 }
 
 
-
+//------------------------------------------------------------------------------Ejercicio 4
 function ejercicio3() {
     //CALIFICACIONES 
     var calificacion=1;
@@ -68,7 +70,7 @@ else{
 
 }
 
-
+//------------------------------------------------------------------------------Ejercicio 5
 function ejercicio4() {
     //nUMEROS PARES
     var numero = prompt("Numeros par: Ingresa un numero de pares")
