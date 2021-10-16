@@ -76,7 +76,7 @@ function ejercicio4() {
     var x=0;
     if (numero!=null) {
     
-        while(a<numero)
+        while(a<=numero)
         {
             var x=x+2
             alert("solicitaste " +numero +" el par numero "+ a +" es " +x );
