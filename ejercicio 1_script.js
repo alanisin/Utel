@@ -57,7 +57,7 @@ function ejercicio3() {
     calificacion++;
   }
   var final=Number(suma)/5;
-  if(final>85){
+  if(final>70){
 
     alert(nombre_completo+" Pasaste tu calificacion es " + final);
   }
