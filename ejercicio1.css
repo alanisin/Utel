@@ -1,0 +1,7 @@
+section{background-color: thistle;
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: auto;
+
+}
