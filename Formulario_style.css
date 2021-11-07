@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(49deg, rgba(0, 0, 0, 1) 0%, rgba(0, 63, 63, 1) 25%, rgba(0, 126, 126, 1) 50%, rgba(0, 191, 191, 1) 75%, rgba(0, 225, 255, 1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ContendedorFormulario {
+    width: 400px;
+    height: 400px;
+    background-color: #FFFF;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-radius: 10px 10px 10px 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+h1{
+    margin-bottom: 40px;
+}
+
+input {
+    width: 90%;
+    height: 25px;
+    margin: 10px;
+    border-bottom: 1px solid gainsboro;
+}
+
+button {
+    height: 50px;
+    width: 95%;
+    padding: 0 15px;
+    margin-top: 5px;
+    background-color: #1BBFDA;
+    border: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #FFFF;
+    border-radius: 5px;
+
+}
