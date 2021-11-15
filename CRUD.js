@@ -1,55 +1,85 @@
-(function(){
-//------------------------------------------------------------------>Variables
-var cantidad = document.getElementById("cantidad");
-var color = document.getElementById("color");
-var talla = document.getElementById("talla");
-var cantidad = document.getElementById("cantidad");
-var btnagregarpedido = document.getElementById("agregar-pedido");
-var lista = document.getElementById("lista-pedido");
-var listadentro = document.getElementById("lista_dentro");
-var editarpedido = document.getElementById("editar");
-var eliminarpedido = document.getElementById("eliminar");
-    
+const input = document.querySelector("input");
+const addBtn = document.querySelector(".btn-add");
+const ul = document.querySelector("ul");
+const empty = document.querySelector(".empty");
+//--------------------------------------Funcion agregar elemento
+addBtn.addEventListener("click", (e) => {
+  input.placeholder = "Escribe para poder EDITAR o AGREGAR";
+  input.className = "grisesito";
+  e.preventDefault();
 
-//------------------------------------------------------------------>Funciones
-var agregarPedido = function(){
-    var cantidadplayera = cantidad.value;
-    var contenido = document.createTextNode(cantidadplayera);
-    var nuevopedido = document.createElement("li")
-    var eliminar = document.createElement("div")
-    var editar = document.createElement("div")
+  const text = input.value;
 
-    nuevopedido.appendChild(contenido);
-    nuevopedido.className ="Contenedor lista";
-    lista.appendChild(nuevopedido);
-    
-    nuevopedido.appendChild(editar);
-    nuevopedido.appendChild(editar).addEventListener("click",editarpedidos);
-    editar.append("Editar")
-    editar.className ="editar";
+  if (text !== "") {
+    const li = document.createElement("li");
+    const p = document.createElement("p");
 
-    nuevopedido.appendChild(eliminar);
-    nuevopedido.appendChild(eliminar).addEventListener("click",eliminarpedidos);
-    eliminar.append("Eliminar")
-    eliminar.className ="eliminar";
- 
+    p.textContent = text;
 
-};
+    li.appendChild(p);
+    li.appendChild(addDeleteBtn());
+    li.appendChild(addEditBtn());
+    ul.appendChild(li);
 
-var eliminarpedidos = function(){
-    var a= EventTarget;
-    console.log(a);
-   //lista.removeChild(a);
-   
+    input.value = "";
+    empty.style.display = "none";
+  } else {
+    input.placeholder = "Es necesario que escribas algo";
+    input.className = "rojito";
+  }
+});
+//--------------------------------------Funcion borrar elemento
 
-};
-var editarpedidos = function(){
+function addDeleteBtn() {
 
-    alert("Edicion correcta");
-};
+  const deleteBtn = document.createElement("button");
 
-//------------------------------------------------------------------>Eventos
-btnagregarpedido.addEventListener("click",agregarPedido);
-editarpedido.addEventListener("click",editarpedidos);
-eliminarpedido.addEventListener("click",eliminarpedidos);
-}());
+  deleteBtn.textContent = "Delete";
+  deleteBtn.className = "btn-delete";
+
+  deleteBtn.addEventListener("click", (e) => {
+    const item = e.target.parentElement;
+    ul.removeChild(item);
+    console.log(item);
+
+    const items = document.querySelectorAll("li");
+
+    if (items.length === 0) {
+      empty.style.display = "block";
+    }
+  });
+
+  return deleteBtn;
+}
+//--------------------------------------Funcion editar elemento
+function addEditBtn() {
+  const editBtn = document.createElement("button");
+  const entrada = document.getElementById("entrada");
+  const pa = document.createElement("p");
+
+
+  editBtn.textContent = "Edit";
+  editBtn.className = "btn-edit";
+
+  editBtn.addEventListener("click", (e) => {
+
+    if (entrada.value <= 0) {
+      input.placeholder = "EDITAR - requiere que escribas algo";
+    input.className = "naranjita";
+    } 
+    else {
+      pa.textContent = entrada.value;
+      var item = e.target;
+      var item1 = e.target.parentElement;
+      var item2 = e.target.parentElement.childNodes[0];
+      item1.replaceChild(pa, item2);
+      input.value = "";
+
+    }
+
+  });
+
+
+
+  return editBtn;
+}

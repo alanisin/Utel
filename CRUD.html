@@ -4,30 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRUD</title>
+    <title>Lista de Tareas</title>
     <link rel="stylesheet" href="./CRUD_style.css">
 </head>
 <body>
+    <div class="container">
+        <h1>Lista de tareas </h1>
 
-    <section class="Seccion Titulo">
-        <h1>Simple</h1>
-        <p>Playeras personalizadas inmediatas</p>
-    </section>
-    
+        <div class="search">
+            <form>
+                <input id="entrada" type="text" placeholder="Agregar tarea...">
+                <button class="btn-add">add</button>
+            </form>
+        </div>
+        <div class="li-container">
+            <ul> 
+            </ul>
+        </div>
 
-    <section Class="Seccion Formulario">
-        <input class="Casilla cantidad"    type="text" name="" id="cantidad" placeholder="Cantidad">
-        <input class="Casilla Talla "name="" id="talla" placeholder="Talla">
-        <input class="Casilla Color "name="" id="color" placeholder="Color">
-        <button id="agregar-pedido" class="boton generico">Agregar al pedido</button>
-
-
-    </section>
-    <ul Class="Seccion Lista" id="lista-pedido">
-        
-    </ul>
-    <div class="empty">
-        <p>No tienes tareas pendientes.</p>
+        <div class="empty">
+            <p>No tienes tareas pendientes.</p>
+        </div>
     </div>
     <script src="./CRUD.js"></script>
 </body>

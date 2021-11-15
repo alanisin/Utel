@@ -1,106 +1,150 @@
-* {
-    box-sizing: border-box;
+body {
     margin: 0;
     padding: 0;
-    list-style: none;
-    text-decoration: none;
-    border: none;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    width: 100%;
+    height: auto;
+  }
+  
+  h1 {
+    width: 100%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+  }
+  
+  .container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(28, 222, 236);
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .search {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  input {
+    width: 50%;
+    padding: 15px 10px;
     outline: none;
-    font-family: 'Segoe UI Light', Tahoma, Geneva, Verdana, sans-serif
-}
-body{
-    width: 100vw;
-    height: 100vh;
-    background-color: #ffff;
+  }
+  
+  .li-container {
+    background-color: rgb(28, 222, 236);;
+    width: 80%;
+    color: darkslategray;
+    margin-top: 20px;
+  }
+  
+  ul {
+    padding: 0;
+  }
+  
+  li {
+    list-style: none;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 15px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  }
+  
+  li p {
+    margin: 0;
+    padding: 15px;
+    width: 100%;
+  }
+  
+  .btn-delete {
+    margin-left: auto;
+    border: none;
+    background-color: #e31746;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    outline: none;
+    width: 25%;
+    font-size: 1.2em;
+  }
+  .btn-edit {
+    margin-left: auto;
+    border: none;
+    background-color: #e39117;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    outline: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 25%;
+    font-size: 1.2em;
+  }
+  
+  .btn-delete:hover {
+    cursor: pointer;
+    background-color: lightseagreen;
+  }
+  .btn-edit:hover {
+    cursor: pointer;
+    background-color: lightseagreen;
+  }
+  
+  .btn-add {
+    width: 25%;
+    padding: 5px 15px;
+    border: none;
+    color: white;
+    font-family: fantasy;
+    background-color: teal;
+    font-size: 1.4rem;
+    outline: none;
+  }
+  
+  .btn-add:hover {
+    cursor: pointer;
+    background-color: darkcyan;
+  }
+  
+  .empty {
+    color: darkslategrey;
+    width: 100%;
+    text-align: center;
+  
     
-}
-
-.Seccion{
-    width:90% ;
-    height: 320px;
-    background-color: #ffff;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-.Titulo{
-height: 150px;
-flex-direction: column;
-margin-bottom: 25px;
-}
-h1{
-    font-size: 4rem;
-}
-
-.Casilla{
-    width: 90%;
-    height: 35px;
-    border-bottom:1px solid rgb(53, 53, 138);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-
-}
-.Casilla::placeholder{
-    color: rgb(194, 194, 199);
-} .boton{
-    width: 90%;
-    height: 35px;
-    border-radius: 5px 5px 5px 5px;
-    background-color: rgb(0, 162, 255);
-    color:white;
+  }
+  .rojito::placeholder {
+    color: rgb(236, 25, 17);
+    border-color: 10px solid rgb(236, 25, 17);
     font-weight: 700;
-}
-.boton:hover{
-    box-shadow: 0 1px 6px 0 rgb(0, 162, 255);
-    border-color: rgb(0, 162, 255);
-}
-.Contenedor {
-    width: 90%;
-    height: 100px;
-    border-radius: 10px 10px 10px 10px;
-    border:1px solid rgb(0, 162, 255);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-
-}
-.listas{
-    width: 20%;
-    height: 90%;
-    border-radius: 10px 10px 10px 10px;
-    border:1px solid rgb(0, 162, 255);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-}
- .formulario{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    font-size: 10px;
-    font-weight: 900;
-
-}
-.editar
-{   width: 33%;
-    height: 25px;
-    color: #ffff;
-    background-color: rgb(255, 174, 0);
-}
-.eliminar
-{   width: 33%;
-    height: 25px;
-    color: #ffff;
-    background-color: red;
-}
+  }
+  .grisesito::placeholder {
+    color: rgb(165, 168, 168);
+  }
+  .naranjita::placeholder {
+    color: rgb(236, 148, 17);
+    font-weight: 700;
+  }
+  
