@@ -8,24 +8,57 @@
     <link rel="stylesheet" href="./CRUD_style.css">
 </head>
 <body>
+    <header>
+        <div class="Titulo">Lista de tareas (CRUD)</div>
+        
+    </header>
+    <section class="container temporal">
+        <ul class="temporal">
+            <li><a href="./index.html" target="_blank">Hub</a></li>
+            <li><a href="https://github.com/alanisin/Utel/blob/main/landing.html" target="_blank">Ver HTML</a></li>
+            <li><a href="https://github.com/alanisin/Utel/blob/main/landing_style_mobile.css" target="_blank">Ver CSS</a></li>
+            <li><a href="https://github.com/alanisin/Utel" target="_blank">Repositorio</a></li>
+            
+        </ul>
+
+    </section>
+    
     <div class="container">
-        <h1>Lista de tareas </h1>
 
         <div class="search">
             <form>
                 <input id="entrada" type="text" placeholder="Agregar tarea...">
                 <button class="btn-add">add</button>
             </form>
+            <div class="empty">
+                <p>No tienes tareas pendientes.</p>
+            </div>
         </div>
         <div class="li-container">
-            <ul> 
+            <ul class="tareas"> 
             </ul>
         </div>
 
-        <div class="empty">
-            <p>No tienes tareas pendientes.</p>
-        </div>
+       
     </div>
     <script src="./CRUD.js"></script>
 </body>
+<footer> 
+    <ul class="lista redes"> <h1>REDES</h1>
+        <li class="twitter-logo"><a href="" ></a></li>
+        <li class="facebook-logo" ><a href="" ></a></li>
+        <li class="youtube-logo"><a href="" ></a></li>
+        <li class="github-logo"><a href=""  ></a></li>
+    </ul>
+    <ul class="lista servicios"> <h1>SERVICIOS</h1>
+       
+    </ul>
+    <ul class="lista sobre-nosotros"> <h1>NOSOTROS</h1>
+     
+    </ul>
+    <ul class="lista legales"> <h1>LEGAL</h1>
+        
+    </ul>
+
+</footer>
 </html>
