@@ -16,38 +16,19 @@
     
 
     <section Class="Seccion Formulario">
-        <input class="Casilla cantidad"    type="text" name="" id="" placeholder="Cantidad">
-        <select class="Casilla Talla "name="" id="" >
-            <option value="">XS</option>
-            <option value="">S</option>
-            <option value="">M</option>
-            <option value="">L</option>
-        </select>
-        <select class="Casilla Color "name="" id="">
-            <option value="">Negro</option>
-            <option value="">Blanco</option>
-        </select>
-
-        <button class="boton generico">Agregar al pedido</button>
+        <input class="Casilla cantidad"    type="text" name="" id="cantidad" placeholder="Cantidad">
+        <input class="Casilla Talla "name="" id="talla" placeholder="Talla">
+        <input class="Casilla Color "name="" id="color" placeholder="Color">
+        <button id="agregar-pedido" class="boton generico">Agregar al pedido</button>
 
 
     </section>
-    <section Class="Seccion Lista">
-        <div class="Contenedor lista">
-            <div></div>
-            <div></div>
-            <div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <div></div>
-            <div></div>
-
-
-        </div>
-
-    </section>
-    
+    <ul Class="Seccion Lista" id="lista-pedido">
+        
+    </ul>
+    <div class="empty">
+        <p>No tienes tareas pendientes.</p>
+    </div>
+    <script src="./CRUD.js"></script>
 </body>
 </html>
